@@ -21,7 +21,7 @@ export default class ViewHome extends HTMLElement {
   }
 
   handleButtonClick(evt) {
-    let contentMessage = `<p class="alert-footer"><small>Template made by <a href="https://github.com/jgleal">JGLeal</a><small></p>`
+    let contentMessage = `<p class="alert-footer"><small>Template made by <a href="">Gil Garica</a><small></p>`
     if (config.isApp) {
       contentMessage =
         `<ul class="alert-ul">

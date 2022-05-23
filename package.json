@@ -1,7 +1,7 @@
 {
-  "name": "ionic-vanillajs",
+  "name": "ionic-TruckMiles",
   "version": "0.0.1",
-  "description": "Ionic VanillaJS template with native custom elements",
+  "description": "TruckMiles Mobile App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
     "ionic:serve": "npm run dev --",
     "ionic:build": "npm run build --"
   },
-  "author": "JGLeal",
+  "author": "Gil Garcia",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
