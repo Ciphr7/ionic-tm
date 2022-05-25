@@ -1,9 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="danger">
     <ion-title class="ion-text-center">${require("@/app-config.js").title}</ion-title>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
+
     <ion-buttons slot="end">
       <ion-button id="btnAlert">
         <ion-icon name="information-circle-outline"></ion-icon>
@@ -11,23 +9,10 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content fullscreen>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+<ion-content fullscreen style="height:100%">
 
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
 
-  <mapea-card id="mapHomeCard" mapid="home-map" center="[234518.685, 4141879.3865]" zoom="10" category="Monumento"
-    title="Plaza de toros de la Maestranza"
-    description="Reprehenderit consectetur <b>esse consectetur proident id</b> culpa mollit laborum eiusmod in magna excepteur nulla.">
-  </mapea-card>
+  <mapea-card id="mapHomeCard" mapid="home-map" center="[234518.685, 4141879.3865]" zoom="10" ></mapea-card> </mapea-card>
 
 </ion-content>
 <!-- The footer area -->
@@ -36,22 +21,26 @@
     <ion-grid class="ion-text-center ion-margin">
       <ion-row>
         <ion-col>
-          <ion-button color="danger" id="runTrip" (click)="openFirstMenu()" >
-            <ion-icon slot="start" name="calculator-outline"></ion-icon>NewTrip
-          </ion-button>
-        
+          <ion-menu-toggle>
+            <ion-button color="danger" id="runTrip">
+              <ion-icon slot="start" name="calculator-outline"></ion-icon>NewTrip
+            </ion-button>
+          </ion-menu-toggle>
         </ion-col>
         <ion-col>
           <ion-button color="danger" id="reset-btn" (click)="openSecondMenu()">
             <!-- <ion-button color="danger" id="reset-btn" > -->
             <ion-icon slot="start" name="refresh-outline"></ion-icon>
-            
-            Reset
-            </ion-button>
+
+            Trip Details
+          </ion-button>
         </ion-col>
       </ion-row>
-      <ion-row>
-        <p>&copy; ProMiles Software Development Corporation</p>
+      <ion-row >
+        <ion-col >
+          <p>&copy; ProMiles Software Development Corporation</p>
+        </ion-col>
+
       </ion-row>
     </ion-grid>
   </ion-toolbar>
